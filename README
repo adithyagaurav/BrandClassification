@@ -6,6 +6,7 @@ DEPENDENCIES :
 
 INSTRUCTIONS : 
 1. Clone the JSON dataset file and place it int the root folder along with training and test script
+    git clone https://github.com/adithyagaurav/BrandClassification.git
 2. To run the training execute following command:
     python3 train.py
 3. Make sure the trained model and learned vocabulary have been saved in the root directory

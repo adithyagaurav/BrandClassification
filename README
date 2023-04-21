@@ -1,0 +1,16 @@
+DEPENDENCIES :
+1. JSON : pip install json
+2. Sklearn : pip install scikit-learn
+3. Imbalanced learn : pip install imbalanced-learn
+4. Flask : pip install flask
+
+INSTRUCTIONS : 
+1. Clone the JSON dataset file and place it int the root folder along with training and test script
+2. To run the training execute following command:
+    python3 train.py
+3. Make sure the trained model and learned vocabulary have been saved in the root directory
+4. To start inference server execute following command:
+    python3 inference.py
+5. To make an inference request, open another terminal and execute following curl command:
+
+    curl -X POST -H "Content-Type: application/json" -d '{"text":"Netflix  English Ukraine Swedish Sing In Unlimited films TV programmes and more Watch anywhere Cancel at any time Ready to watch Enter your email to create or restart your membership Email address Get Started  Enjoy on your TV Watch on smart TVs PlayStation Xbox Chromecast Apple TV Bluray players and more Download your programmes to watch offline Save your favourites easily and always have something to watch Downloading Enjoy on your TV Watch on smart TVs PlayStation Xbox Chromecast Apple TV Bluray players and more Enjoy on your TV Watch on smart TVs PlayStation Xbox Chromecast Apple TV Bluray players and more Frequently Asked Questions What is Netflix Netflix is a streaming service that offers a wide variety of awardwinning TV programmes films anime documentaries and more  on thousands of internetconnected devices You can watch as much as you want whenever you want without a single advert  all for one low monthly price Theres always something new to discover and new TV programmes"}' http://127.0.0.1:5555/brand
